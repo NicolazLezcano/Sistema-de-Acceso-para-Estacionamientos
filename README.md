@@ -1,4 +1,4 @@
-# Sistema de Acceso Automatizado para Estacionamientos (SAE)
+# Sistema de Acceso para Estacionamientos (SAE)
 
 Este proyecto consiste en un sistema integral de automatización para el control de ingreso y egreso de vehículos. El objetivo principal es optimizar el flujo vehicular y restringir el acceso a personal no autorizado mediante tecnología **RFID** y monitoreo remoto vía **Bluetooth**.
 
@@ -27,3 +27,9 @@ El sistema pone en funcionamiento múltiples periféricos y protocolos de comuni
 * **UART:** Comunicación serie con el módulo Bluetooth y envío de alertas al smartphone.
 * **PWM:** Control de posición de los servomotores para las barreras ($0^{\circ}$ a $90^{\circ}$).
 * **Timers:** Configurados para la captura de señales de los sensores ultrasónicos y sincronización de datos.
+
+## 📂 Estructura del Proyecto
+* **[/firmware](./firmware):** Contiene el código fuente en C desarrollado para la STM32F411, incluyendo las rutinas de control y librerías HAL.
+* **[/docs](./docs):** Documentación técnica completa, hojas de datos (datasheets) de los componentes, el informe final del proyecto y el manual de uso de la aplicación.
+* **[/media](./media):** Registro fotográfico de la maqueta y demostraciones en video del sistema de acceso funcionando en tiempo real.
+* **[/bin](./bin):** Archivo ejecutable (.apk) de la aplicación móvil diseñada para el monitoreo y control remoto del estacionamiento.
