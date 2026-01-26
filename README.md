@@ -8,7 +8,7 @@ Este proyecto consiste en un sistema integral de automatización para el control
 * **Automatización de Barreras:** Control preciso de servomotores para apertura y cierre tras la detección completa del vehículo mediante sensores ultrasónicos.
 * **Monitoreo Remoto (Android):** Interfaz para el personal de seguridad que permite la visualización de estado y el control manual de emergencia de las barreras.
 
-<img src="./media/images/ilustracion_sistema.png" width="800">
+<img src="./media/images/ilustracion_sistema.png" width="800" alt="Vista General del Sistema">
 
 ## 🛠️ Stack Tecnológico
 ### Hardware
@@ -34,8 +34,17 @@ El sistema pone en funcionamiento múltiples periféricos y protocolos de comuni
 
 ![Jerarquía de Componentes](./media/images/jerarquia_modulos.png)
 
+## 🔌 Diseño de Hardware (KiCad)
+
+### Esquemático
+<img src="./hardware/esquematico_sistema_completo.jpg" width="800" alt="Esquemático del Sistema">
+
+### Diseño de PCB
+<img src="./hardware/vista_pcb_kicad.jpg" width="600" alt="Vista PCB">
+
 ## 📂 Estructura del Proyecto
 * **[/firmware](./firmware):** Contiene el código fuente en C desarrollado para la STM32F411, incluyendo las rutinas de control y librerías HAL.
+* **[/hardware](./hardware):** Imágenes de diseño electrónico, incluyendo el esquemático del circuito y el PCB desarrollado en KiCad.
 * **[/docs](./docs):** Documentación técnica completa, hojas de datos (datasheets) de los componentes, el informe final del proyecto y el manual de uso de la aplicación.
 * **[/media](./media):** Registro fotográfico de la maqueta y demostraciones en video del sistema de acceso funcionando en tiempo real.
 * **[/bin](./bin):** Archivo ejecutable (.apk) de la aplicación móvil diseñada para el monitoreo y control remoto del estacionamiento.
