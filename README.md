@@ -8,6 +8,8 @@ Este proyecto consiste en un sistema integral de automatización para el control
 * **Automatización de Barreras:** Control preciso de servomotores para apertura y cierre tras la detección completa del vehículo mediante sensores ultrasónicos.
 * **Monitoreo Remoto (Android):** Interfaz para el personal de seguridad que permite la visualización de estado y el control manual de emergencia de las barreras.
 
+<img src="./media/images/ilustracion_sistema.png" width="800">
+
 ## 🛠️ Stack Tecnológico
 ### Hardware
 * **Microcontrolador:** STM32F411 Discovery Kit (Cortex-M4).
@@ -16,9 +18,11 @@ Este proyecto consiste en un sistema integral de automatización para el control
 * **Comunicación:** Módulo Bluetooth HC-05.
 
 ### Software
-* **Firmware:** Desarrollado en **C/C++** utilizando **STM32CubeIDE** y librerías **HAL**.
+* **Firmware:** Desarrollado en **C** utilizando **STM32CubeIDE** y librerías **HAL**.
 * **App Móvil:** Diseñada con **MIT App Inventor** para dispositivos Android.
 * **Diseño de PCB:** Esquemático y ruteado realizado en **KiCad**.
+
+![Diagrama Lógico](./media/images/diagrama_bloques.png)
 
 ## 📐 Arquitectura de Bajo Nivel y Protocolos
 El sistema pone en funcionamiento múltiples periféricos y protocolos de comunicación del microcontrolador:
@@ -27,6 +31,8 @@ El sistema pone en funcionamiento múltiples periféricos y protocolos de comuni
 * **UART:** Comunicación serie con el módulo Bluetooth y envío de alertas al smartphone.
 * **PWM:** Control de posición de los servomotores para las barreras ($0^{\circ}$ a $90^{\circ}$).
 * **Timers:** Configurados para la captura de señales de los sensores ultrasónicos y sincronización de datos.
+
+![Jerarquía de Componentes](./media/images/jerarquia_modulos.png)
 
 ## 📂 Estructura del Proyecto
 * **[/firmware](./firmware):** Contiene el código fuente en C desarrollado para la STM32F411, incluyendo las rutinas de control y librerías HAL.
